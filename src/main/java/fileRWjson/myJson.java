@@ -19,9 +19,9 @@ public class myJson {
     }
     public static void writeJson() throws IOException {
         JSONObject jsob= new JSONObject();
-        jsob.put("name","Asik Syed");
+        jsob.put("name","Myself Asik Syed");
         jsob.put("Age","27");
-        jsob.put("Designation","Software Engineer");
+        jsob.put("Designation","Software Engineer is my designation");
         JSONObject addobj = new JSONObject();
         addobj.put("Area","Basundhara");
         addobj.put("Postal code","1200");

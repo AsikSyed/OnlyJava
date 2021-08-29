@@ -24,8 +24,8 @@ public class atmjson {
                 getpermit();
                 int t;
                 System.out.println("Do you want to transit?");
-                System.out.println(" Press 1 to continue");
-                System.out.println(" Press 0 to continue");
+                System.out.println(" Press 1 to continue ");
+                System.out.println(" Press 0 to Exit ");
                 t = sc.nextInt();
 
                 if (t == 1) {
