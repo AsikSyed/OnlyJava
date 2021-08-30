@@ -101,7 +101,12 @@ public class quizJson {
             String option4 = (String) json.get("Option-4");
 
             String  answer = (String) json.get("Answer");
+
             System.out.println("Question: " + question);
+            System.out.println("Option - 1: " + option1);
+            System.out.println("Option - 2: " + option2);
+            System.out.println("Option - 3: " + option3);
+            System.out.println("Option - 4: " + option4);
 
             System.out.println("Please write your Answer- ");
             Scanner scanner = new Scanner(System.in);
