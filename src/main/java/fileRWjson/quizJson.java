@@ -58,6 +58,15 @@ public class quizJson {
             System.out.println("Enter question number " + qesNo + ":");
             quesObj.put("Question", scanner.nextLine());
 
+            System.out.println("Enter 1st option: ");
+            quesObj.put("Option-1", scanner.nextLine());
+            System.out.println("Enter 2nd option: ");
+            quesObj.put("Option-2", scanner.nextLine());
+            System.out.println("Enter 3rd option: ");
+            quesObj.put("Option-3", scanner.nextLine());
+            System.out.println("Enter 4th option: ");
+            quesObj.put("Option-4", scanner.nextLine());
+
             System.out.println("Answer: ");
             quesObj.put("Answer", scanner.nextLine());
 
@@ -85,6 +94,11 @@ public class quizJson {
             int random = (int) (Math.random() * ((max - min) + min));
             JSONObject json = (JSONObject) jsonArray.get(random);
             String question = (String) json.get("Question");
+
+            String option1 = (String) json.get("Option-1");
+            String option2 = (String) json.get("Option-2");
+            String option3 = (String) json.get("Option-3");
+            String option4 = (String) json.get("Option-4");
 
             String  answer = (String) json.get("Answer");
             System.out.println("Question: " + question);
